@@ -1,0 +1,66 @@
+body,
+html {
+  height: 100%;
+}
+
+#info-box {
+  text-align: center;
+}
+
+.visitor-info {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("../imgs/dark-pen.jpeg");
+
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: -1;
+}
+
+.outer {
+  
+  background-color: rgba(0,0,0, 0); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.visitor-info-input {
+  /* color: white; */
+  border: 0;
+  outline: 0;
+  background: transparent;
+  /* text-align: center */
+}
+
+.visitor-img {
+  height: 50%;
+}
+
+
+.error {
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <title>Smart Door Application</title>
+
+    <meta charset="utf-8" />
+
+    <!--Reference to Bootstrap CSS-->
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background: #111 no-repeat;
+        background-image: -webkit-gradient(
+          radial,
+          50% 0,
+          150,
+          50% 0,
+          300,
+          from(#444),
+          to(#111)
+        );
+      }
+
+      .container {
+        color: #fff;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div class="bg-image"></div>
+    <div class="container outer">
+      <h1 style="text-align: center; color: white;">Smart Door Application</h1>
+      <div class="row justify-content-sm-center">
+        <div class="col-sm-10">
+          <h4>Visitor Video</h4>
+          <img
+            src=""
+            class="img-fluid"
+            alt="Responsive image"
+            id="visitor-img"
+          />
+
+          <!-- <h4>4:3 Aspect Ratio</h4>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              src="https://www.youtube.com/embed/VS6UOyTb5eU"
+              frameborder="0"
+              allowfullscreen=""
+            ></iframe>
+          </div> -->
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div
+          class="col-sm-6 alert alert-secondary m-3"
+          role="alert"
+          id="info-box"
+        >
+          <!-- Visitor Name :
+          <span class="visitor-info"
+            ><input
+              type="text"
+              placeholder="A Fat Cat"
+              class="visitor-info-input"
+              id="visitor-name"/><span class="error"></span></span
+          ><br />
+          Visitor Phone Number :
+          <span class="visitor-info"
+            ><input
+              type="text"
+              placeholder="(111)111-1111"
+              class="visitor-info-input"
+              id="visitor-number"/><span class="error"></span
+          ></span> -->
+
+          <form>
+            <div class="form-group">
+              <label for="VisitorNameInput">Visitor Name</label>
+              <input type="input" class="form-control" id="visitor-name" placeholder="Visitor Name">
+              <small id="emailHelp" class="form-text error" style="display: none;">Please enter a name.</small>
+            </div>
+            <div class="form-group">
+              <label for="VisitorPhoneNumberInput">Visitor Phone Number</label>
+              <input type="text" class="form-control" id="visitor-number" placeholder="Visitor Phone Number">
+              <small id="emailHelp" class="form-text error" style="display: none;">Please enter an valid phone number.</small>
+            </div>
+            <!-- <div class="form-group">
+              <label for="VisitorPasscodeInput">Passcode</label>
+              <input type="text" class="form-control" id="visitor-passcode" placeholder="Passcode">
+              <small id="emailHelp" class="form-text error" style="display: none;">please enter a passcode</small>
+            </div> -->
+            <!-- <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button> -->
+          </form>
+        </div>
+      </div>
+      <div class="row  m-3">
+        <div class="col-sm-12 d-flex justify-content-around">
+          <button type="button" class="btn btn-success" id="accept-button">
+            Accept
+          </button>
+          <button type="button" class="btn btn-danger" id="decline-button">
+            Decline
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--Reference to jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <!--Reference to Bootstrap core JavaScript-->
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
