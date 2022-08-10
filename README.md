@@ -21,5 +21,5 @@ e. For every unknown face detected by Rekogniton, send an SMS to the “owner”
 i. If clicked, the link should take you to a simple web page (WP1) that collects the name and phone number of the visitor via a web form. Submitting this form will  create a new record in the “visitors” table (DB2), indexed by the FaceId identified by Rekognition.
 
 ### Authorize
-Creates a second web page (WP2), the “virtual door”, that prompts the user to input the OTP. If the OTP is valid, greet the user by name and present a success
+Created a second web page (WP2), the “virtual door”, that prompts the user to input the OTP. If the OTP is valid, greet the user by name and present a success
 message, If the OTP is invalid,  a “permission denied” message will be displayed. 
