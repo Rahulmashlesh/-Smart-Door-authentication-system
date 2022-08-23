@@ -1,4 +1,4 @@
-# Smart Door authentication system
+# Smart Door Authentication System
 
 Implemented a Smart Door authentication system.
 Used Kinesis Video Streams and Amazon Rekognition to build a distributed system that authenticates people and provides them with access to a virtual door.
